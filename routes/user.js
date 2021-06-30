@@ -197,7 +197,7 @@ router.get("/cart/order-success", isLoggedIn, function(req, res){
                                   "</tr>" 
                     })
 
-                    source += "</table>" +    
+                    source += "</table>" +
                     "<h2>Total Price: " + totalprice + "</h2>"            
                     "</body>" +
                     "</html>";
