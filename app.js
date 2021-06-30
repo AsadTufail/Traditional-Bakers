@@ -20,7 +20,8 @@ app.use(function(req, res, next){
 var adminRoutes     = require("./routes/admin"),
     userRoutes  = require("./routes/user")
 
-mongoose.connect("mongodb://localhost/TraditionalBakers", { useNewUrlParser: true , useUnifiedTopology: true , useFindAndModify :false, useCreateIndex: true});
+//mongoose.connect("mongodb://localhost/TraditionalBakers", { useNewUrlParser: true , useUnifiedTopology: true , useFindAndModify :false, useCreateIndex: true});
+mongoose.connect("mongodb+srv://asad:rtaah2004@traditionalbakers.ch2nr.mongodb.net/myFirstDatabase?retryWrites=true&w=majority", { useNewUrlParser: true , useUnifiedTopology: true , useFindAndModify :false, useCreateIndex: true});
 
 app.use(bodyParser.urlencoded({extended: true}));
 app.set("view engine", "ejs");
